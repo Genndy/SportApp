@@ -99,7 +99,11 @@ public class RulesFragment extends Fragment {
     }
 
     private void updateTextView() {
-        rulesText = db.readFromBDByGameName(gameName).get(0).getText();
+        if(!db.readFromBDByGameName(gameName).get(0).getText().isEmpty()){
+            rulesText = db.readFromBDByGameName(gameName).get(0).getText();
+        }else{
+            rulesText = "Правил нет, может стоит добавить?";
+        }
         mTextView.setText(rulesText);
     }
 }
