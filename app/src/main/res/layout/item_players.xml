@@ -1,0 +1,29 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/person_photo"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/no_image" />
+    <!--android:src="@drawable/face_for_768x1280"-->
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/person_photo"
+        android:text="Имя"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        />
+</RelativeLayout>

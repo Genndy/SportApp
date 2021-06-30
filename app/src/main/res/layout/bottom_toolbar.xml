@@ -1,0 +1,35 @@
+<LinearLayout
+    android:id="@+id/toolbar"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_theme_light"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+    <ImageView
+        android:id="@+id/toolbar_button_rules"
+        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/toolbar_rules"/>
+
+    <ImageView
+        android:id="@+id/toolbar_button_players"
+        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/toolbar_players"/>
+
+    <ImageView
+        android:id="@+id/toolbar_button_gallery"
+        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/toolbar_gallery"/>
+    </LinearLayout>
+
+</LinearLayout>
