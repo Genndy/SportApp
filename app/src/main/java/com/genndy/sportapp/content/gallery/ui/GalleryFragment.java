@@ -154,9 +154,6 @@ public class GalleryFragment extends Fragment {
             @Override
             public void run() {
                 String photoUrl = mInputTextPhotoLink.getText().toString();
-                System.out.println("context changed");
-                System.out.print(" content http://");
-                System.out.print(" " + photoUrl);
                 Glide.with(thisContext)
                         .load(photoUrl)
                         .error(R.drawable.no_image)
